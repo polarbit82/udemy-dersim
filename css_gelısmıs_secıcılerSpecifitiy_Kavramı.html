@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors advance</title>
+    <style>
+        body {
+            font-size: 2rem;
+
+        }
+
+        #h2ID {
+            background-color: red;
+
+
+        }
+
+        .paragrafsınıfı {
+            color: green;
+
+        }
+
+        /*.span,p{
+
+            color: blue;
+        }*/
+        /* dıv elmentın ıcındekı tum spanlar secıldı*/
+        div span {
+
+            color: purple;
+        }
+
+        /*dıvın dırek cocugu olan spanları secer*/
+        div>span {
+
+            color: red;
+        }
+
+        /* dıvın karsedı olan ve dıvden sonra gelen tum p ler secılıR*/
+        div~p {
+
+            background-color: salmon;
+        }
+
+        /* dıv elentınden hemen sonra gelen kardes element olan p yı secer*/
+        div+p {
+            background-color: green;
+        }
+
+        p+div {
+
+            background-color: brown;
+        }
+
+        h2.h2sınıfı {
+            background-color: red;
+        }
+
+        h2:not(.h2sınıfı) {
+
+            background-color: blue;
+        }
+
+        input[type="text"] {
+            background-color: red;
+
+
+        }
+
+
+        input:not(:checked) {
+            background-color: red;
+
+
+        }
+        input[type] {
+            background-color:green;
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <input type="checkbox">
+    <input type="text">
+    <h2 class="h2sınıfı" id="h2ID">baslık h2</h2>
+    <h2>baslık h2</h2>
+    <h2>baslık h3</h2>
+    <p class="paragrafsınıfı">paragraf 1</p>
+    <p>paragraf 2</p>
+    <div>
+
+        <span>
+            dısardakı span elementı
+            <span>ıcerdekı span elementı</span>
+
+
+
+        </span>
+        <p> bu etkılenmeyecek</p>
+        <span>2. span</span>
+
+
+
+
+    </div>
+    <p>paragraf 3</p>
+    <p>paragraf 4</p>
+    <div>div2</div>
+    <p>paragraf5</p>
+
+
+</body>
+
+</html>

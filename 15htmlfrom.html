@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="degerlerial.html" method="get">
+         <fieldset>
+             <legend>ısım bılgılerı</legend>
+
+        <label for="ad">adınızı gırın:</label>
+        <input type="text" id="ad"><br><br>
+
+        <label for="soyad">soyadınızı gırın:</label>
+        <input type="text" id="soyad" name="soyad"><br><br>
+
+        <label for="il">sehır gırın:</label>
+        <input list="sehırler" id="il" name="il"><br><br>
+        <datalist id="sehırler">
+            <option value="ıstnabul">
+            <option value="akara"> 
+            <option value="bartın">  
+        
+                
+
+
+
+        </datalist>
+
+
+    </fieldset>
+
+    <fieldset>
+        
+        <legend>degısık bılgıler</legend>
+
+        <input  type="radio" name="cinsiyet" value="erkek" id="erkek" checked="checked">
+        <label for="erkek">erkek</label>
+
+        <input type="radio" name="cinsiyet" value="kadın" id="kadın">
+        <label for="kadın">kadın</label>
+
+        <br><br>
+
+        <input type="checkbox" name="chbmavi" id="mavi" value="mavi" checked="checked">
+        <label for="mavi">mavi</label>
+
+        <input type="checkbox" name="chbsarı" id="sarı" value="sarı">
+        <label for="sarı">sarı</label>
+
+        <input type="checkbox" name="chbkırmızı" id="kırmızı" value="kırmızı">
+        <label for="kırmızı">kırmızı</label>
+
+        <input type="checkbox" name="chbyeşil" id= "yeşil" value="yeşil">
+        <label for="yeşil">yeşil</label>
+        <br><br>
+    </fieldset>
+    <br><br>
+
+
+        <input type="submit" value="gönder">
+        <input type="reset" value="formu sil">
+        <input type="button" onclick="alert('merhaba')" value="normal bir button">
+        <br><br>
+
+        <label for="arabalar">fovori markanı sec</label>
+
+        <select name="arabalar" id="arabalar" multiple>
+            <option value="honda">honda</option>
+            <option value="reno">reno</option>
+            <option value="bmv">bmv</option>
+            <option value="mercedes">mercedes</option>
+            <option value="pejo">pejo</option>
+        
+
+        </select>
+        <br><br>
+        <label for="adres">adres:</label>
+        <textarea name="adres" id="adres" cols="50" rows="2"></textarea>
+        <br><br>
+        <label for="bio">bio:</label>
+        <textarea name="bio" id="bio" style="width:200px;height:50px"></textarea>
+        <br><br>
+
+    
+
+        <button type="button" onclick="alert('selam')"><img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli" width=150px height=150px></button>
+    
+
+
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>

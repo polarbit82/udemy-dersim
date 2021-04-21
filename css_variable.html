@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css custom properties</title>
+    <style>
+        :root{
+
+            --ana-renk:green;
+            --my-border:3px solid purple;
+
+
+
+        }
+
+
+        h2 {
+            background-color: red;
+            color:var(--ana-renk);
+            border:var(--my-border);
+            padding: .5rem;
+
+
+        }
+
+        p {
+            color:var(--ana-renk);
+            border: var(--my-border);
+            --ana-renk:orange;
+
+        }
+        span{
+
+            color: var(--ana-renk);
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Baslık</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, omnis.</p>
+    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, perspiciatis.</span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae dolores voluptate deleniti? Placeat nesciunt
+        aliquid aut incidunt modi! Corrupti aspernatur omnis, deleniti, minus illo iusto odio ducimus nesciunt veniam
+        nisi debitis, asperiores odit ab vel voluptatibus nulla! Obcaecati commodi vitae consequatur optio veniam
+        delectus, quibusdam maxime officia, reprehenderit sapiente voluptates.</p>
+        <button>tıkla</button>
+        <script>
+            const button=document.querySelector('button').addEventListener('click',()=>{
+                document.documentElement.style.setProperty('--ana-renk','pink');
+
+
+
+
+            });
+
+
+        </script>
+</body>
+
+</html>

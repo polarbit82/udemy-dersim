@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position turlerı ve z-index kavramı/static relative absolute fixed sticky</title>
+    <style>
+        body{
+            font-size:32px ;
+            height: 200vh;
+            margin: 1rem;
+            border: 2px solid red;
+
+
+
+        }
+        .parent{
+            border: 2px solid blue;
+            padding: 2rem;
+            background-color: chocolate;
+      
+            
+        }
+
+        .item1{
+            padding: 2rem;
+            background-color: darkmagenta;
+            position: relative;
+            top: 60px;
+            z-index: 90;
+
+
+
+        }
+        .item2{
+            padding: 2rem;
+            background-color: teal;
+            position: sticky;
+            top: 0;
+      
+        }
+        .item3{
+            padding: 2rem;
+            background-color: gold;
+            position: fixed;
+            bottom: 10px;
+            right: 0px;
+
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        ana tasıyıcı
+        <div class="item1">item1</div>
+        <div class="item2">item2</div>
+        <div class="item1">item1</div>
+        <div class="item1">item1</div>
+        <div class="item1">item1</div>
+        <div class="item1">item1</div>
+        <div class="item1">item1</div>
+        <div class="item1">item1</div>
+        <div class="item3">item3</div>
+
+
+    </div>
+    
+</body>
+</html>
