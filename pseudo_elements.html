@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo element ve sınıflar</title>
+    <style>
+        p::first-letter {
+
+            font-size: 6rem;
+        }
+
+        p::first-line {
+
+            background-color: red;
+        }
+
+        p::selection {
+            background-color: blue;
+            color: brown;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+            background-color: salmon;
+
+
+        }
+        .box::before{
+            display: block;
+            content:' ';
+            width: 10px;
+            height: 10px;
+            background-color: yellow;
+
+
+        }
+        .box::after{
+            display: block;
+            content:' ';
+            width: 10px;
+            height: 10px;
+            background-color: yellow;
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- elementler :: ile sınıflar : ile belirtilir-->
+    <div class="box">
+        kubra
+
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum consectetur nostrum hic praesentium totam
+        dolores facere inventore eligendi, perspiciatis, alias, ratione similique? Nulla fugiat error distinctio atque
+        quis veniam ad quo, dolor possimus inventore eum. Facilis vero laboriosam vel voluptatibus, animi facere ipsum
+        eum ex unde provident cum maxime eaque.</p>
+
+</body>
+
+</html>
